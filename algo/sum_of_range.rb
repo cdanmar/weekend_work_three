@@ -3,7 +3,13 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
-
+  x = array[0].downto(array[1]).to_a
+  if x.empty?
+    x = (array[0]..array[1]).to_a
+    x.inject(0, :+)
+  else
+    x.inject(0, :+)
+  end
 end
 
 # Driver code - don't touch anything below this line.
