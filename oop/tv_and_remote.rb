@@ -23,11 +23,11 @@ end
 
 class Remote < Television
   def increment_volume
-    @volume =+ 1
+    @volume += 1
   end
 
   def decrement_volume
-    @volume =- 1
+    @volume -= 1
   end
 
   def set_channel(number)
@@ -39,5 +39,13 @@ x = Remote.new
 p x
 
 x.increment_volume
+
+p x
+
+x.decrement_volume
+
+p x
+
+x.set_channel(6)
 
 p x
